@@ -4,19 +4,19 @@
 
 Este projeto tem relação ao item 3 da atividade final da disciplina de Padrões Web, HTML, CSS e Javascript do curso de pós-graduação da PUC Minas. Consiste na implementação de uma pequena aplicação que permite fazer desenhos utilizando o Canvas, armazená-los em um servidor e posteriormente carregá-los para visualização e/ou edição. Os componentes visuais da aplicação foram feitos utilizando a biblioteca Bootstrap e a comunicação para o CRUD dos desenhos foi feita utilizando requisições HTTP por meio do Ajax.
 
-Como o lado servidor não foi parte do escopo da disciplina, nada foi implementado explicitamente neste sentido. Porém, de modo a disponibilizar uma maneira de gerenciar as requisições solicitadas pelo frontend, o projeto utiliza uma API REST falsa. Esta API é implementada por meio do uso do [JSON Server](https://github.com/typicode/json-server) que lê o arquivo [db.json](https://github.com/RicardoGPP/paw-class6-task1-ajaxcanvas/blob/main/db.json) para criar as rotas que permitirão a interação (GET, POST, PUT, DELETE...) com os dados.
-
 ## Preparação
+
+Como o lado servidor não foi parte do escopo da disciplina, nada foi implementado explicitamente neste sentido. Porém, de modo a disponibilizar uma maneira de gerenciar as requisições solicitadas pelo frontend, o projeto utiliza uma API REST falsa. Esta API é implementada por meio do uso do [JSON Server](https://github.com/typicode/json-server) que lê o arquivo [db.json](https://github.com/RicardoGPP/paw-class6-task1-ajaxcanvas/blob/main/db.json) para criar as rotas que permitirão a interação (GET, POST, PUT, DELETE...) com os dados.
 
 Antes de iniciar a aplicação, é necessário preparar o JSON Server. Para isto, siga os seguintes passos:
 
-Instale o JSON Server:
+**Instale o JSON Server:**
 
 ```
 npm install -g json-server
 ```
 
-Inicie o JSON Server apontando para o arquivo db.json:
+**Inicie o JSON Server apontando para o arquivo db.json:**
 
 ```bash
 json-server --watch db.json
